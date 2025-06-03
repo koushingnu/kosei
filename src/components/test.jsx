@@ -8,20 +8,79 @@ import {
   FaLock, FaRocket, FaPenFancy, FaCog
 } from "react-icons/fa";
 
-// 12枚分のテストデータ
 const services = [
-  { icon: <FaCode className="text-5xl text-purple-400" />, title: "Webサイト制作", description: "スマホ対応、予約フォーム付きの構築を実現。", detail: "Next.jsやWordPressで管理しやすいサイトを設計。" },
-  { icon: <FaInstagram className="text-5xl text-pink-400" />, title: "SNS運用代行", description: "Instagram/Xの投稿や返信も丸ごとお任せ。", detail: "投稿スケジュールや反応分析まで一括して対応。" },
-  { icon: <FaChartBar className="text-5xl text-green-400" />, title: "口コミ分析", description: "レビューや感想を分析し改善に活かします。", detail: "Googleレビュー等からユーザーの声を抽出・可視化。" },
-  { icon: <FaLightbulb className="text-5xl text-yellow-400" />, title: "改善提案", description: "ヒアリングを元に現状改善プランをご提案。", detail: "UI改善、導線整理、SEO強化などアクションを設計。" },
-  { icon: <FaCamera className="text-5xl text-blue-400" />, title: "撮影サービス", description: "SNS・Web用の写真や動画を撮影＆編集。", detail: "プロ用機材で撮影から編集納品までワンストップ。" },
-  { icon: <FaPaintBrush className="text-5xl text-indigo-400" />, title: "バナー・印刷物制作", description: "小さなデザインも高品質で仕上げます。", detail: "バナー、フライヤー、メニュー表等を短納期制作。" },
-  { icon: <FaMobileAlt className="text-5xl text-rose-400" />, title: "モバイル最適化", description: "スマホ・タブレット表示にも完全対応。", detail: "どのデバイスでも快適なレスポンシブ設計。" },
-  { icon: <FaGlobe className="text-5xl text-cyan-400" />, title: "多言語対応", description: "海外ユーザー向けに多言語サイト構築。", detail: "日本語・英語・中国語など複数言語切替対応。" },
-  { icon: <FaLock className="text-5xl text-red-400" />, title: "セキュリティ強化", description: "情報漏洩や改ざん対策もお任せください。", detail: "SSL対応、セキュリティ診断、CMS保守まで。" },
-  { icon: <FaRocket className="text-5xl text-fuchsia-400" />, title: "高速化対応", description: "表示スピード向上で離脱率を削減。", detail: "画像最適化・キャッシュ戦略でPageSpeed改善。" },
-  { icon: <FaPenFancy className="text-5xl text-amber-400" />, title: "ライティング", description: "検索に強い文章を作成します。", detail: "SEO意識した記事・ページ文章作成を代行。" },
-  { icon: <FaCog className="text-5xl text-slate-400" />, title: "運用・保守", description: "公開後も安心の継続サポート。", detail: "サイト更新、エラー対応、分析レポート提出など。" },
+  {
+    icon: <FaCode className="text-5xl text-purple-400" />,
+    title: "Webサイト制作",
+    description: "スマホ対応、予約フォーム付きの構築を実現。",
+    detail: "Next.jsやWordPressを使い、集客・管理しやすいサイトを設計します。",
+  },
+  {
+    icon: <FaInstagram className="text-5xl text-pink-400" />,
+    title: "SNS運用代行",
+    description: "Instagram/Xの投稿や返信も丸ごとお任せ。",
+    detail: "投稿スケジュール、反応分析、戦略立案まで一括して対応します。",
+  },
+  {
+    icon: <FaChartBar className="text-5xl text-green-400" />,
+    title: "口コミ分析",
+    description: "レビューや感想を分析し改善に活かします。",
+    detail: "Googleレビューや食べログなどからユーザーの声を抽出・視覚化します。",
+  },
+  {
+    icon: <FaLightbulb className="text-5xl text-yellow-400" />,
+    title: "改善提案",
+    description: "ヒアリングを元に現状改善プランをご提案。",
+    detail: "UI改善、導線整理、SEO強化など課題に応じたアクションを設計します。",
+  },
+  {
+    icon: <FaCamera className="text-5xl text-blue-400" />,
+    title: "撮影サービス",
+    description: "SNS・Web用の写真や動画を撮影＆編集。",
+    detail: "プロ用機材での撮影から編集納品までワンストップ対応します。",
+  },
+  {
+    icon: <FaPaintBrush className="text-5xl text-indigo-400" />,
+    title: "バナー・印刷物制作",
+    description: "小さなデザインも高品質で仕上げます。",
+    detail: "広告バナー、フライヤー、メニュー表などを短納期で制作します。",
+  },
+  {
+    icon: <FaMobileAlt className="text-5xl text-rose-400" />,
+    title: "モバイル最適化",
+    description: "スマホ・タブレット表示にも完全対応。",
+    detail: "レスポンシブ設計でどのデバイスでも快適な表示を実現します。",
+  },
+  {
+    icon: <FaGlobe className="text-5xl text-cyan-400" />,
+    title: "多言語対応",
+    description: "海外ユーザー向けに多言語サイト構築。",
+    detail: "日本語・英語・中国語など複数言語への翻訳・切り替えを実装します。",
+  },
+  {
+    icon: <FaLock className="text-5xl text-red-400" />,
+    title: "セキュリティ強化",
+    description: "情報漏洩や改ざん対策もお任せください。",
+    detail: "SSL対応、セキュリティ診断、CMS保守まで対応します。",
+  },
+  {
+    icon: <FaRocket className="text-5xl text-fuchsia-400" />,
+    title: "高速化対応",
+    description: "表示スピード向上で離脱率を削減。",
+    detail: "画像最適化・キャッシュ戦略などでPageSpeedを改善します。",
+  },
+  {
+    icon: <FaPenFancy className="text-5xl text-amber-400" />,
+    title: "ライティング",
+    description: "検索に強い文章を作成します。",
+    detail: "SEOを意識した記事・ページ文章の作成を代行します。",
+  },
+  {
+    icon: <FaCog className="text-5xl text-slate-400" />,
+    title: "運用・保守",
+    description: "公開後も安心の継続サポート。",
+    detail: "サイト更新、エラー対応、分析レポート提出など保守運用も可能です。",
+  },
 ];
 
 const CARD_COUNT = services.length;
@@ -30,31 +89,32 @@ const CARD_HEIGHT = 300;
 const RADIUS = 430;
 
 const CompanySection = () => {
-  const [currentAngle, setCurrentAngle] = useState(0);
+  const [angle, setAngle] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const intervalRef = useRef<NodeJS.Timeout>();
 
-  // 自動回転（2秒ごとに1枚進む）
+  // 自動回転
   useEffect(() => {
     intervalRef.current = setInterval(() => {
-      setCurrentAngle(angle => angle - 360 / CARD_COUNT);
+      setAngle(a => a - (360 / CARD_COUNT) / 2);
     }, 2000);
     return () => clearInterval(intervalRef.current);
   }, []);
 
-  // 手動回転
-  const rotateLeft = () => setCurrentAngle(a => a + 360 / CARD_COUNT);
-  const rotateRight = () => setCurrentAngle(a => a - 360 / CARD_COUNT);
+  // 左右手動回転
+  const rotateLeft = () => setAngle(a => a + 360 / CARD_COUNT);
+  const rotateRight = () => setAngle(a => a - 360 / CARD_COUNT);
 
-  // 一番手前のカードIndex計算
+  // 一番手前に来ているカードのindexを算出
   const getCenterIndex = () => {
-    // 現在の角度a
-    const a = ((currentAngle % 360) + 360) % 360;
+    // 0〜360度の範囲に変換
+    const a = ((angle % 360) + 360) % 360;
+    // 0度に最も近いカードが中央
     let minDiff = 360, centerIdx = 0;
     for (let i = 0; i < CARD_COUNT; i++) {
-      const cardAngle = ((360 / CARD_COUNT) * i) % 360;
+      let cardAngle = ((360 / CARD_COUNT) * i) % 360;
       let diff = Math.abs(cardAngle - (a % 360));
-      if (diff > 180) diff = 360 - diff;
+      if (diff > 180) diff = 360 - diff; // 360度回転補正
       if (diff < minDiff) {
         minDiff = diff;
         centerIdx = i;
@@ -99,13 +159,13 @@ const CompanySection = () => {
             style={{
               width: 0,
               height: 0,
-              transform: `translate(-50%, -50%) rotateY(${currentAngle}deg)`,
+              transform: `translate(-50%, -50%) rotateY(${angle}deg)`,
               transformStyle: "preserve-3d",
-              transition: "transform 0.7s cubic-bezier(.7,1.5,.7,1)",
+              transition: "transform 0.8s cubic-bezier(.5,1.6,.5,1)",
             }}
           >
             {services.map((service, i) => {
-              const baseAngle = (360 / CARD_COUNT) * i;
+              const cardAngle = (360 / CARD_COUNT) * i;
               const isCenter = i === centerIdx;
               return (
                 <div
@@ -116,18 +176,19 @@ const CompanySection = () => {
                     top: "50%",
                     width: CARD_WIDTH,
                     height: CARD_HEIGHT,
-                    // 外向き（接線方向）: 逆回転なし！
+                    // Y軸で円周配置＋逆回転で正面維持
                     transform: `
-                      rotateY(${baseAngle}deg)
+                      rotateY(${cardAngle}deg)
                       translateZ(${RADIUS}px)
+                      rotateY(${-cardAngle}deg)
                       translateX(-50%) translateY(-50%)
                     `,
                     zIndex: isCenter ? 10 : 1,
                     filter: isCenter
                       ? "brightness(1.08) drop-shadow(0 8px 36px rgba(80,0,160,0.13))"
-                      : "brightness(0.8) blur(0.5px)",
-                    opacity: isCenter ? 1 : 0.7,
-                    transition: "all 0.32s cubic-bezier(.7,1.4,.7,1)",
+                      : "brightness(0.82) blur(0.5px)",
+                    opacity: isCenter ? 1 : 0.75,
+                    transition: "all 0.5s cubic-bezier(.7,1.4,.7,1)",
                     cursor: isCenter ? "pointer" : "default",
                     pointerEvents: isCenter ? "auto" : "none", // 中央のみクリック可
                   }}
